@@ -1,0 +1,36 @@
+module.exports = {
+  root: true,
+  parser: '@typescript-eslint/parser',
+  plugins: [
+    '@typescript-eslint',
+  ],
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+  ],
+  rules: {
+    curly: "error",
+    indent: ["error", 2, { "SwitchCase": 1 }],
+    eqeqeq: "error",
+    'no-multi-spaces': "error",
+    'no-multiple-empty-lines': ["error", {'max': 1}],
+    'block-spacing': "error",
+    'brace-style': "error",
+    'comma-spacing': "error",
+    'computed-property-spacing': ["error", "never"],
+    'implicit-arrow-linebreak': ["error", "beside"],
+    'no-mixed-spaces-and-tabs': ["error", "smart-tabs"],
+    quotes: ["error", "single"],
+    semi: ["error", "never"],
+    'key-spacing': "error",
+    'keyword-spacing': "error",
+    'no-trailing-spaces': "error",
+    'space-before-blocks': "error",
+    'space-in-parens': "error",
+    'arrow-spacing': "error",
+    'no-var': "error",
+    'space-unary-ops': "error",
+    'space-infix-ops': "error",
+    'no-whitespace-before-property': "error",
+  }
+};
